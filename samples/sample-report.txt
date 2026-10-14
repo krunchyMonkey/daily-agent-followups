@@ -1,0 +1,24 @@
+Daily Sales Status Report
+Report Date: 10/13/2026
+
+Agent            Customer        Account ID   Status                 Revenue     Today's Rev
+Sarah Johnson    John Doe        A-10231      Pending Install        $1,250.00   $0.00
+Sarah Johnson    Maria Garcia    A-10244      Install Pending        $950.00     $0.00
+Sarah Johnson    Robert Lee      A-10187      Canceled               $700.00     -$700.00
+Sarah Johnson    Linda Park      A-10199      Installed              $1,400.00   $1,400.00
+Mike Anderson    James Wilson    A-10302      Scheduled              $1,100.00   $0.00
+Mike Anderson    Paul Turner     A-10311      Active                 $820.00     $820.00
+Priya Patel      Kevin Brooks    A-10405      Pending Installation   $2,300.00   $0.00
+Priya Patel      Amanda Ross     A-10412      Cancelled              $1,050.00   -$1,050.00
+Priya Patel      Diego Ramirez   A-10419      Customer Canceled      $480.00     -$480.00
+Priya Patel      Grace Kim       A-10423      Awaiting Install                   $0.00
+Carlos Mendez    Olivia Chen     A-10501      pending install        $675.50     $0.00
+Carlos Mendez    Ethan Moore     A-10507      CANCELED INSTALL       $1,320.00   -$1,320.00
+Carlos Mendez    Sophia Hall     A-10512      Installed              $990.00     $990.00
+Jasmine Wright   Noah Allen      A-10601      Pending                $1,875.00   $0.00
+Jasmine Wright   Emma Scott      A-10606      Cancel                 $560.00     -$560.00
+Jasmine Wright   Liam Young      A-10610      Pending Install        $2,040.00   $0.00
+Mike Anderson    Ava King        A-10322      Installed              $1,210.00   $1,210.00
+Carlos Mendez    Mason Green     A-10519      Pending Install        $1,150.00   $0.00
+
+Total                                                               $22,895.50
