@@ -1,6 +1,6 @@
 # Daily Agent Follow-Ups
 
-A small desktop app that turns Ryan's daily PDF report into clean, copy-pasteable follow-up messages for each sales agent.
+A small desktop app that turns the report owner's daily PDF report into clean, copy-pasteable follow-up messages for each sales agent.
 
 Drop in the PDF. You get one block per agent listing their **Pending Install** and **Canceled** accounts with revenue, ready to paste into Teams.
 
@@ -136,7 +136,7 @@ Canceled:
 
 ## Current first-pass limitations
 
-- **Not yet tested against Ryan's real PDF.** The parser was built against a realistic sample. Header names, status values and column spacing may need small tweaks once we see the real file. Those spots are marked `TODO(real-pdf)` in `src/parser/`.
+- **Not yet tested against the report owner's real PDF.** The parser was built against a realistic sample. Header names, status values and column spacing may need small tweaks once we see the real file. Those spots are marked `TODO(real-pdf)` in `src/parser/`.
 - **Scanned or image-only PDFs are not supported** (there's no OCR). They show: *"Unable to extract usable data from the PDF…"*
 - **Table layouts are expected.** Free-form text, or rows that wrap across several lines, are not reassembled.
 - When there is no customer name, the item falls back to `Account <id>`. If there is neither, it shows `Unknown Customer`.
@@ -166,7 +166,7 @@ The parser is plain TypeScript with no UI or Electron dependencies, so it can be
 
 ## TODO
 
-- [ ] Run against Ryan's real PDF and tune `TODO(real-pdf)` spots (header aliases, statuses, line/cell tolerances).
+- [ ] Run against the report owner's real PDF and tune `TODO(real-pdf)` spots (header aliases, statuses, line/cell tolerances).
 - [ ] Handle rows that wrap onto two lines, if the real report has them.
 - [ ] Package a Windows installer with `electron-builder`.
 - [ ] Optional OCR fallback for scanned PDFs.
