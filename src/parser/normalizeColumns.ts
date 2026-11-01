@@ -14,7 +14,7 @@ export function normalizeHeader(header: string): string {
  */
 const IGNORED_HEADERS = new Set(['todaysrev', 'todayrev', 'todaysrevenue', 'todayrevenue'])
 
-// TODO(real-pdf): once we have Ryan's actual PDF, add any extra header spellings here.
+// TODO(real-pdf): once we have the report owner's actual PDF, add any extra header spellings here.
 const ALIASES: Record<string, ColumnKey> = {
   agent: 'agentName',
   agentname: 'agentName',
