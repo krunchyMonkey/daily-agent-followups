@@ -55,7 +55,7 @@ export function ReportPreview({ report, parsed }: { report: FollowUpReport; pars
         </section>
       )}
 
-      {/* Debug view: what the parser actually read. Handy when tuning the parser against Ryan's real PDF. */}
+      {/* Debug view: what the parser actually read. Handy when tuning the parser against the report owner's real PDF. */}
       <details className="card debug">
         <summary>Show extracted rows ({parsed.rows.length})</summary>
         <p className="muted">Detected columns: {parsed.detectedColumns.join(', ') || 'none'}</p>
