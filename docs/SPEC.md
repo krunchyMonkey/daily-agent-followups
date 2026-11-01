@@ -4,11 +4,11 @@ The original first-pass specification this repo implements.
 
 ## Task
 
-Build a first-pass desktop app that converts Ryan's daily PDF report into copy-pasteable agent follow-up messages.
+Build a first-pass desktop app that converts the report owner's daily PDF report into copy-pasteable agent follow-up messages.
 
 ## Context
 
-Ryan has a daily PDF report that he wants transformed into clean follow-up text for sales agents.
+the report owner has a daily PDF report that he wants transformed into clean follow-up text for sales agents.
 
 Requested output:
 
@@ -16,14 +16,14 @@ Requested output:
 - For each agent, create two lists: **Pending Install** and **Canceled**.
 - Include revenue for each item.
 - Ignore/remove the "Today's Rev" column.
-- First pass should generate text that Ryan can copy/paste.
+- First pass should generate text that the report owner can copy/paste.
 - Long-term goal is to PM each agent daily through Microsoft Teams.
 
 For now, build the first pass only.
 
 ## Goal
 
-A working first-pass desktop app that lets Ryan:
+A working first-pass desktop app that lets the report owner:
 
 1. Open the app.
 2. Drag/drop or select a PDF.
