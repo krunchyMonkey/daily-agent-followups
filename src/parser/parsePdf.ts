@@ -22,7 +22,7 @@ const isTextItem = (item: unknown): item is TextItem =>
 /**
  * Rebuilds visual lines from positioned PDF text: items with (almost) the same baseline form a line,
  * and items close together on a line merge into one cell. Wide gaps separate columns.
- * TODO(real-pdf): tune the tolerances below once we see Ryan's real report.
+ * TODO(real-pdf): tune the tolerances below once we see the report owner's real report.
  */
 export async function extractPdfLines(pdfjs: PdfJs, data: ArrayBuffer): Promise<Line[]> {
   const doc = await pdfjs.getDocument({ data: new Uint8Array(data) }).promise
