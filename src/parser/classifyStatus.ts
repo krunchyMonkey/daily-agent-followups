@@ -8,7 +8,7 @@ export function normalizeStatus(status: string): string {
     .trim()
 }
 
-// TODO(real-pdf): extend these lists with the exact status strings that appear in Ryan's report.
+// TODO(real-pdf): extend these lists with the exact status strings that appear in the report owner's report.
 const CANCELED_PATTERNS = [/\bcancel/, /\bcancell?ed\b/]
 const PENDING_PATTERNS = [/\bpending\b/, /\bscheduled\b/, /\bawaiting install/]
 
