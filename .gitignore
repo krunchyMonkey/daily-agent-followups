@@ -3,3 +3,17 @@ dist/
 dist-electron/
 release/
 *.log
+
+# Local secrets and personal client reports
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.pdf
+*.csv
+*.xlsx
+*.xls
+*.bak
