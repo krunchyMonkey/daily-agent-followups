@@ -1,17 +1,17 @@
 # Future: Microsoft Teams automation (Phase 2)
 
-> **Out of scope for V1.** The first version deliberately stops at copy/paste and `.txt` export. Ryan reviews the output and sends the messages himself. This document describes the next phase so the V1 design leaves room for it.
+> **Out of scope for V1.** The first version deliberately stops at copy/paste and `.txt` export. the report owner reviews the output and sends the messages himself. This document describes the next phase so the V1 design leaves room for it.
 
 ## Target workflow
 
 ```text
-Ryan uploads PDF
+the report owner uploads PDF
         ↓
 App parses PDF
         ↓
-Ryan previews output
+the report owner previews output
         ↓
-Ryan clicks Send to Teams
+the report owner clicks Send to Teams
         ↓
 Each agent receives only their own Pending Install and Canceled list
 ```
@@ -22,7 +22,7 @@ V1 already produces the per-agent message text (`formatAgentMessage` in `src/par
 
 ### 1. Microsoft Teams authentication
 - Use Microsoft Graph with an Entra ID (Azure AD) app registration.
-- Prefer **delegated** auth, signed in as Ryan, so messages come from him. That needs the `Chat.Create`, `ChatMessage.Send` and `User.ReadBasic.All` scopes.
+- Prefer **delegated** auth, signed in as the report owner, so messages come from him. That needs the `Chat.Create`, `ChatMessage.Send` and `User.ReadBasic.All` scopes.
 - Use the MSAL device-code or auth-code flow from the Electron main process. Keep tokens in the OS credential store (for example via `safeStorage`). **Never** hard-code secrets or commit them.
 - Alternatives to evaluate: a Teams bot (proactive messages) or Power Automate / Workflows if Graph permissions are restricted by IT.
 
